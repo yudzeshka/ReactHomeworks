@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-class Button extends Component {
+class Img extends Component {
   handleHover = () => {
     const { alertText } = this.props;
     alert(alertText);
