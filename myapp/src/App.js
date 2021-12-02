@@ -1,6 +1,8 @@
 import "./App.css";
 import Button from "./Button.js";
 import { Component } from "react";
+import { buildQueries } from "@testing-library/dom";
+import Img from "./Img";
 
 class App extends Component {
   constructor() {
@@ -13,20 +15,8 @@ class App extends Component {
     return (
       <>
         <h1> Hello!!! </h1>
-        <img
-          src={this.state.img}
-          onMouseEnter={() => {
-            this.setState({
-              img: "https://vectorforfree.com/wp-content/uploads/2020/05/Have_A_Nice_Day_VectorForFree.png",
-            });
-          }}
-          onMouseOut={() => {
-            this.setState({
-              img: "https://pt-blog.ru/wp-content/uploads/2017/09/17-4.jpg",
-            });
-          }}
-        ></img>
-        <Button name="I am button" alertText="Helllllloooooo"></Button>
+        <Img alt="some picture"></Img>
+        <Button name="Click me !"></Button>
       </>
     );
   }

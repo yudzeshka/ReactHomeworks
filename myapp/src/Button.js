@@ -1,13 +1,20 @@
 import { Component } from "react";
 
 class Button extends Component {
-  handleHover = () => {
-    const { alertText } = this.props;
-    alert(alertText);
+  constructor() {
+    super();
+    this.state = {
+      backgroundColor: "mediumPurple",
+    };
+  }
+  handleClick = () => {
+    this.setState({backgroundColor: "gold"})
   };
   render() {
     const { name } = this.props;
-    return <button onMouseEnter={this.handleHover}>{name}</button>;
+    return <button onClick={this.handleClick} style={{
+      backgroundColor: this.state.backgroundColor
+     }}>{name}</button>;
   }
 }
 
