@@ -7,13 +7,13 @@ class App extends Component {
   constructor() {
     super();
   }
-  
+
   render() {
     return (
       <>
         <h1> Hello!!! </h1>
-        <Img alt="some picture"/>
-        <Button name="Click me !"/>
+        <Img alt="some picture" />
+        <Button name="Click me !" />
       </>
     );
   }
