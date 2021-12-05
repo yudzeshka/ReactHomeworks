@@ -1,5 +1,7 @@
 import { Component } from "react";
 import "./App.css";
+import Button from "./Button";
+import Paragraph from "./Paragraph";
 
 const getRandomIntInclusive = (min, max) => {
   const roundedMin = Math.ceil(min);
@@ -28,13 +30,13 @@ class App extends Component {
   render() {
     return (
       <>
-        <p>{`length = ${randomNumbers.length}`}</p>
+        <Paragraph text={`list length = ${randomNumbers.length}`} />
         <ul>
           {randomNumbers.map((number, index) => (
             <li key={index}>{number}</li>
           ))}
         </ul>
-        <button onClick={this.handleClick}>Add random number</button>
+        <Button text="Add random number" onClick={this.handleClick} />
       </>
     );
   }
