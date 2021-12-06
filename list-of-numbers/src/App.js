@@ -18,13 +18,13 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      arrLength: randomNumbers.length,
+      arr: randomNumbers,
     };
   }
 
   handleClick = () => {
     randomNumbers.push(getRandomIntInclusive(1, 100));
-    this.setState({ arrLength: randomNumbers.length });
+    this.setState({ arr: randomNumbers });
   };
 
   render() {
