@@ -1,7 +1,6 @@
 import "./App.css";
-
 import React, { Component } from "react";
-import Button from "./Button";
+// import Button from "./Button";
 
 const colors = [
   "Lime",
