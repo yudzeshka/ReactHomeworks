@@ -25,10 +25,14 @@ export class App extends Component {
   }
 
   componentDidMount() {
-    setInterval(() => {
+    this.intervalId = setInterval(() => {
       this.setState({
         color: randomNumber(colors),
       });
+      if (this.state.color === "Yellow") {
+        alert("Yellow");
+        clearInterval(this.intervalId);
+      }
     }, 1000);
   }
 
