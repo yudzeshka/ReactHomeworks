@@ -29,10 +29,10 @@ export class App extends Component {
         color: randomNumber(colors),
       });
 
-      if (this.state.color === "Yellow") {
-        alert("Yellow");
-        clearInterval(this.intervalId);
-      }
+      // if (this.state.color === "Yellow") {
+      //   alert("Yellow");
+      //   clearInterval(this.intervalId);
+      // }
     }, 1000);
   }
 
