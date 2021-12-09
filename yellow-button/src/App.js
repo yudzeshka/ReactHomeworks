@@ -36,6 +36,15 @@ export class App extends Component {
     }, 1000);
   }
 
+  // shouldComponentUpdate() {
+  //   const { color } = this.state;
+  //   if (color === "Yellow") {
+  //     alert("yellow");
+  //     return false;
+  //   }
+  //   return true;
+  // }
+
   render() {
     const { color } = this.state;
 
