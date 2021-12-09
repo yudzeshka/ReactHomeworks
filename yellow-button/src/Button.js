@@ -5,7 +5,7 @@ export default class Button extends Component {
     if (nexProps.style.backgroundColor !== "Yellow") {
       return true;
     }
-    console.log("yellow");
+    alert("yellow");
     return false;
   }
 
