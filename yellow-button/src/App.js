@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { Component } from "react";
-// import Button from "./Button";
+import Button from "./Button";
 
 const colors = [
   "Lime",
@@ -28,6 +28,7 @@ export class App extends Component {
       this.setState({
         color: randomNumber(colors),
       });
+
       if (this.state.color === "Yellow") {
         alert("Yellow");
         clearInterval(this.intervalId);
@@ -39,15 +40,12 @@ export class App extends Component {
     const { color } = this.state;
 
     return (
-      <button style={{ backgroundColor: color, padding: "10px" }}>
+      <Button
         text="I am button"
-      </button>
+        style={{ backgroundColor: color, padding: "10px" }}
+      />
     );
   }
 }
 
 export default App;
-
-// function randomNumber(arr) {
-//   return arr[Math.floor(Math.random() * arr.length)];
-// }
